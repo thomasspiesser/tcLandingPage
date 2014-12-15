@@ -8,5 +8,8 @@ Template.admin.events({
 Template.admin.helpers({
 	emails: function () {
 		return Emails.find().fetch();
+	},
+	readableDate: function (timestamp) {
+		return timestamp.toLocaleString()
 	}
 });

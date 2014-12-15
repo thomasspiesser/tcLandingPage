@@ -12,6 +12,15 @@
 	<div class="ui six wide column">
 	<div class="ui segment">
 
+	{{#if success}}
+		<div class="ui info message">
+			<div class="content">
+	   		<!-- <div class="header">Error</div> -->
+	    	<p>{{success}}</p>
+	  	</div>
+	  </div>
+	{{/if}}
+
 	{{#if error}}
 		<div class="ui error message">
 			<div class="content">
@@ -22,8 +31,8 @@
 	{{/if}}
 
 	<div class="ui fluid action input">
-	  <input type="email" placeholder="Email">
-	  <div class="ui right labeled icon button">
+	  <input type="email" id="email" placeholder="Email">
+	  <div class="ui right labeled icon button" id="sendButton">
     <i class="mail icon"></i>
     Senden
   </div>
