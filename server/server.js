@@ -16,9 +16,8 @@ Meteor.startup(function () {
 });
 
 Meteor.publish("emails", function() {
-  if (this.userId) {
-    return Emails.find();
-  }
+  if (!this.userId) return this.ready(); 
+  return Emails.find();
 });
 
 Meteor.methods({
