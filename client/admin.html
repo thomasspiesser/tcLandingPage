@@ -1,0 +1,23 @@
+<template name="admin">
+
+	<div class="ui grid">
+	<div class="ui five wide column"></div>
+	<div class="ui six wide column">
+	<div class="ui segment">
+
+  <table class="ui celled striped table">
+    <tr><th>Email</th><th>Referrer</th><th>Time</th></tr>
+    {{#each emails}}
+      <tr><td>{{ this.email }}</td><td>{{ this.referrer }}</td><td>{{ this.timestamp }}</td></tr>
+    {{/each }}
+  </table>
+
+	</div>
+	</div>
+	<div class="ui five wide column">
+		<div class="ui red basic button" id="logoutButton">Log out</div>
+	</div>
+	</div>
+
+
+</template>

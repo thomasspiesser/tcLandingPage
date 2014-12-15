@@ -7,13 +7,30 @@
 </body>
 
 <template name="home">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+	<div class="ui grid">
+	<div class="ui five wide column"></div>
+	<div class="ui six wide column">
+	<div class="ui segment">
+
+	{{#if error}}
+		<div class="ui error message">
+			<div class="content">
+	   		<div class="header">Error</div>
+	    	<p>{{error}}</p>
+	  	</div>
+	  </div>
+	{{/if}}
+
+	<div class="ui fluid action input">
+	  <input type="email" placeholder="Email">
+	  <div class="ui right labeled icon button">
+    <i class="mail icon"></i>
+    Senden
+  </div>
+	</div>
+
+	</div>
+	</div>
+	<div class="ui five wide column"></div>
+	</div>
 </template>
-
-
-<template name="admin">
-  <button>Click Me more</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-

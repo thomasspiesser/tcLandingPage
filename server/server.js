@@ -1,3 +1,5 @@
+Emails = new Meteor.Collection("emails");
+
 Meteor.startup(function () {
 	if ( Meteor.users.find().count() === 0 ) {
 		var user = Accounts.createUser({
@@ -8,4 +10,10 @@ Meteor.startup(function () {
 			}
 		});
 	}
+});
+
+Meteor.publish("emails", function() {
+  if (this.userId) {
+    return Emails.find();
+  }
 });

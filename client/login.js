@@ -1,11 +1,11 @@
-Template.signIn.helpers({
+Template.login.helpers({
   error: function() {
     return Session.get("createError");
   }
 });
 
-Template.signIn.events({
-  'click #signInButton' : function(e, t) {
+Template.login.events({
+  'click #loginButton' : function(e, t) {
     var email = t.find('#account-email').value;
     var password = t.find('#account-password').value;
 
