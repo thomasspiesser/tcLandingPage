@@ -1,1 +1,53 @@
 /* CSS declarations go here */
+body {
+	background-color: #E844CD;
+	background-image: -webkit-radial-gradient(farthest-corner, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.95)); 
+  background-image: radial-gradient(farthest-corner, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.95));
+}
+
+.ui.page.grid {
+	padding-top: 5rem;
+}
+
+/*.ui.menu {
+	background: transparent;
+  position: absolute;
+  top: 40px;
+  z-index: 900;
+  left: 10%;
+  padding: 2em 0em;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px transparent;
+}
+
+.ui.menu .item:before {
+	width: 0px
+}
+
+.ui.menu .item {
+	color: #23A5DB;
+	font-size: 25px;
+	font-weight: bold;
+}*/
+
+.column {
+	width: 100%;
+}
+
+.introduction {
+position: relative;
+clear: both;
+display: block;
+text-align: center;
+}
+
+.header {
+	/*font-size: 50px;*/
+	color: #23A5DB;
+}
+
+h1.header {
+	font-size: 50px;
+	font-weight: normal;
+	color: #23A5DB;
+}

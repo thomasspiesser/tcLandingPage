@@ -7,38 +7,76 @@
 </body>
 
 <template name="home">
-	<div class="ui grid">
-	<div class="ui five wide column"></div>
-	<div class="ui six wide column">
-	<div class="ui segment">
 
-	{{#if success}}
-		<div class="ui info message">
-			<div class="content">
-	    	<p>{{success}}</p>
-	  	</div>
-	  </div>
-	{{/if}}
+<!-- 	<div class="ui menu">
+		<div class="item">
+			<div class="ui logo shape">
+				<img src="/traincrowd-Logo-web.jpg" alt="logo" class="ui image" width="250px">
+			</div>
+		</div>
+		<div class="item">
+			<div id="logoText">improve yourself. learn together.</div>
+		</div>
+	</div> -->
 
-	{{#if error}}
-		<div class="ui error message">
-			<div class="content">
-	   		<div class="header">Error</div>
-	    	<p>{{error}}</p>
-	  	</div>
-	  </div>
-	{{/if}}
 
-	<div class="ui fluid action input">
-	  <input type="email" id="email" placeholder="Email">
-	  <div class="ui right labeled icon button" id="sendButton">
-    <i class="mail icon"></i>
-    Anmelden
-  </div>
+
+
+	<div class="ui page grid">
+	<div class="column">
+		<div class="introduction">
+
+			<div class="ui logo shape">
+				<img src="/traincrowd-Logo-web.jpg" alt="logo" class="ui image" width="250px">
+			</div>
+			<h2 class="header">improve yourself. learn together.</h2>
+
+			<!-- <h1 class="header" style="padding:50px;">traincrowd bietet ab 2015 eine innovative online-Plattform für den Weiterbildungsmarkt</h1> -->
+			<h1 class="header" style="padding:50px;">Mit der Kraft des Internets, beleben wir den Weiterbildungsmarkt!</h1>
+
+
+			{{#if success}}
+				<div class="ui info message">
+					<div class="content">
+			    	<p>{{success}}</p>
+			  	</div>
+			  </div>
+			{{/if}}
+
+			{{#if error}}
+				<div class="ui error message">
+					<div class="content">
+			   		<div class="header">Fehler</div>
+			    	<p>{{error}}</p>
+			  	</div>
+			  </div>
+			{{/if}}
+
+			<div class="ui pointing below small label">
+	      Interessiert? Melden Sie sich jetzt an und erhalten exklusiv Infos schon bevor es los geht:
+	    </div>
+
+	    <br>
+
+		  <div class="ui big icon input">
+			  
+		  	<input type="email" id="email" placeholder="Ihre Email">
+		  	<i class="mail icon"></i>
+		  </div>
+
+		  <div class="ui inverted basic blue button" id="sendButton">
+	    Anmelden
+	  	</div><br>
+	  	
+
+	  	<div class="ui hidden divider"></div>
+	  	<div style="padding:50px;">
+	  	<a href="mailto:info&#64;traincrowd.de">info - at - traincrowd.de</a> 
+			</div>
+		</div>
 	</div>
 
-	</div>
-	</div>
-	<div class="ui five wide column"></div>
+
+
 	</div>
 </template>
