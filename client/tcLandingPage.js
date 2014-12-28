@@ -21,7 +21,7 @@ Template.home.events({
 				} else {
 					$('#email').val("");
 					Session.set( "createError", "" );
-					Session.set( "createSuccess", "Danke, wir werden Dich auf dem Laufenden halten" );
+					Session.set( "createSuccess", "Danke, wir werden Sie auf dem Laufenden halten." );
 				}
 			});
 		} else {
